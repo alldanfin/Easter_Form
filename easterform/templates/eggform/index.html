@@ -8,12 +8,14 @@
   </head>
   <body>
     <div class="container">
-      <h1> Please Sign Up Here</h1>
-      <form method="post">
-        {{ form.as_p }}
-        {% csrf_token %}
-        <input type="submit" name="btn btn-primary" value="Submit">
-      </form>
+      <div class="jumbotron">
+        <h1> Please Sign Up Here</h1>
+        <form method="post">
+          {{ form.as_p }}
+          {% csrf_token %}
+          <input type="submit" name="btn btn-primary" value="Submit">
+        </form>
+      </div>
     </div>
 
   </body>
